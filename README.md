@@ -19,23 +19,13 @@
 			{"key": '新竹大鵬里', "value": 2}
 		]
 
-
-		margin = {top: 10, left: 120, right: 50, bottom: 20}
-
-		colorFunc = ->
-			it
-				.style {
-					"fill": 'url(#themeGradient)'
-				}
-
-
 		firstBar = barChart!
 			.data data
-			.container '#bar'
-			.margin margin
+			.container '#bar' ### the container where to init the bar chart
 			.barHeight 25
-			.barStyle colorFunc
 
 
-		firstBar!
-		firstBar.draw!
+		firstBar! ### call this when page init, so that the svg is being initiated, and the space is saved
+
+
+		firstBar.draw! ### when user actually scroll to the viewport, then start entering animation
