@@ -9,7 +9,12 @@
 ![clock](/doc/demo.gif)
 
 
+
+
 #Example Bar Chart
+
+[See it in action](http://iing.tw/policies/long-term_care)
+
 
 		data = [
 			{"key": '彰化碧峰里', "value": 	43}
