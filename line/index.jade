@@ -1,0 +1,50 @@
+doctype html
+html
+	head
+		title Line Chart
+		meta(http-equiv="Content-Type", content="text/html; charset=UTF-8")
+		script(type="text/javascript", src="../lib/d3.min.js")
+		script(type="text/javascript", src="../lib/prelude-browser-min.js")
+
+	style.
+		.line {
+			height: 400px;
+			width: 400px;
+			float: left;
+		}
+
+		.axis path,
+		.axis line {
+			fill: none;
+			stroke: grey;
+			stroke-width: 1px;
+			shape-rendering: crispEdges;
+		}
+
+		.axis text {
+			font-size: 14px;
+			fill: grey;
+			shape-rendering: crispEdges;
+		}
+
+		.number {
+			font-size: 16px;
+		}
+
+		
+
+	body
+		div#line1.line(style="text-align:center").
+			65 歲以上人口總佔比
+		div#line2.line(style="text-align:center").
+			平均年齡
+		div#line3.line(style="text-align:center").
+			總人口數
+
+		span(style="float:right; color:grey")
+				資料來源：中華民國人口推計 - 採低推計預估：<a href="http://www.ndc.gov.tw/Content_List.aspx?n=84223C65B6F94D72">國家發展委員會</a> (2014 年)；<a href="https://docs.google.com/spreadsheets/d/1rKyLNlVI-I4kMSbuuisBQVOAzyK7NTSmdOpk3KPePZ8/edit?usp=sharing">資料計算表</a>
+
+
+
+		script(type="text/javascript", src="./js/line.js")
+		script(type="text/javascript", src="./js/exec.js")
