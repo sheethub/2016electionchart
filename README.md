@@ -4,7 +4,9 @@
 1. Following Mike Bostock's [Reusable Chart](http://bost.ocks.org/mike/chart/) pattern
 2. Responsive using SVG viewbox
 3. Entering Animation
-4. Flexible
+4. Flexible (the following clock is built using settimeinterval with donut chart)
+
+![clock](/doc/demo.gif)
 
 
 #Example Bar Chart
